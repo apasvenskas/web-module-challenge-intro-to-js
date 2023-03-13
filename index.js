@@ -157,24 +157,24 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
 
 function hungryDog(weight, age){
   if (age => 1 && weight <= 5) {    
-  console.log(weight * 0.05);
+  return (weight * 0.05);
   } else if (age => 1 && weight >= 6 && weight <= 10) {
-    console.log(weight * 0.04);
+    return(weight * 0.04);
   } else if (age => 1 && weight >= 11 && weight <= 15) {
-    console.log(weight * 0.03);
+    return(weight * 0.03);
   } else if (age => 1 && weight > 15) {
-    console.log(weight * 0.02);
+    return(weight * 0.02);
   }
   if (age < 1 && age >= 0.17 && age <= .33 ) {
-    console.log(weight * .1);
+    return(weight * .1);
   } else if(age > .33 && age <= .58) {
-    console.log(weight * 0.05);
+    return(weight * 0.05);
   } else if (age > .58 && age < 1) {
-    console.log(weight * 0.04);
+    return(weight * 0.04);
   }
 }
-hungryDog(4, 1)
-
+//hungryDog(4, 1)
+console.log('task3', hungryDog(4,1));
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
