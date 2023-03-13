@@ -19,14 +19,13 @@ Do the following:
 
    HINT: no function required
 */
-function voting () {
-  let votingAge = 20; 
-  if (votingAge > 18) {
-    console.log(true);
-  }
+const votingAge = 18;
+
+if(votingAge >= 18){
+  console.log(true);
+}else{
+  console.log(false);
 }
-voting()
-//console.log('task1a', voting());
 
 
 /*
@@ -44,12 +43,13 @@ function values(){
   let firstThing = 3;
   let secondThing = 2;
   if (firstThing < secondThing) {
-    console.log(true);
+    return'true';
   } else if (firstThing > secondThing){
-    console.log(false);
+    return 'false';
   }
 }
-values ()
+//values ()
+console.log('task1b', values() );
 
 
 
@@ -65,12 +65,13 @@ Do the following:
 
    HINT: look up the Number method
 */
-function conversion () {
-  let year = "1999";
-  console.log(Math.floor(year))
+function conversion(year) {
+  year = Math.floor("1999");
+  //console.log(Math.floor(year))
+  return year;
 }
-conversion()
-
+//conversion()
+console.log(conversion())
 
 
 
@@ -101,11 +102,11 @@ Do the following:
 */
 
 function dogYears(years){
-  let desiredValue = (years * 7);
-  console.log(desiredValue);
+  return years * 7;
+  //console.log(desiredValue);
 }
-dogYears(5)
-
+//dogYears(5)
+console.log('task2', dogYears(5));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -238,7 +239,7 @@ Using the miles function below do the following:
 */
 
 function miles(kilometers){
-  return (kilometers * 0.62);
+  return (kilometers * 0.621371);
 }
 console.log('task 5a', miles(50));
 
@@ -253,7 +254,7 @@ Using the feet function below do the following:
 */
 
 function feet(cm){
-  return (cm * 0.033);
+  return (cm * 0.0328084);
 }
 console.log('task 5b', feet(180));
 
